@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NJTOKKI Homepage</title>
+    <meta name="description" content="NJTOKKI">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="Index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            background-image: url("bluesmoke.jpg");
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face{
+            font-family:bettersweet;
+            src: url(bettersweet.otf)
+}      
+        /* Style the navigation bar */
+        nav {
+            background-color: #8bb0e4;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: rgba(45, 45, 219, 0.733);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: bettersweet;
+            font-size: 30px;
+        }
+
+        nav a:hover {
+            background-color: #bbeb;
+            color: #4f89d9;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: rgba(124, 124, 190, 0.733);
+            text-align: center;
+            font-family: bettersweet;
+            font-size: 50px;
+        }
+
+        section {
+            padding: 20px;
+            color: rgba(31, 31, 209, 0.733);
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 600px){
+            nav a{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Popup Design</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="Discography.html">Discography</a>
+        <a href="Forum.html">Forum</a>
+        <a href="Order.html">Shop</a>
+    </nav>
+
+    <div class="logo-container">
+        <img src="new jeans logo.png" width="550" height="100" style="max-width: 100%;">
+    </div>
+    <h1>New&nbsp;Jeans&nbsp;Fan Site</h1>
+
+    <section>
+        <h2>Welcome to NJTOKKI! 🐰✨</h2>
+        <h3>Are you ready?</h3>
+        <p>This site is dedicated to the k-pop group New Jeans. It is a safe place for fans to enjoy their music while studying or interact with other fans on forums!</p>
+        <p>Remember to be cordial with each other!</p>
+        <p>Check out their latest album and music videos 🐰</p>
+    </section>
+
+    <div class="container">
+        <div class="music-container">
+            <div class="top-bar">
+                <i class="material-icons">favorite_border</i>
+                <span>Now Playing</span>
+                <i class="material-icons">add</i>
+            </div>
+
+            <div class="img-area">
+                <img src="images/bunn.jpg" alt="">
+            </div>
+
+            <div class="song-details">
+                <p class="name">New Jeans EP1. - Hype Boy</p>
+                <p class="artist">New Jeans</p>
+            </div>
+
+            <div class="progress-area">
+
+                <div class="progress-bar">
+                    <audio id="HypeBoy" src=""></audio>
+                </div>
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+            </div>
+
+            <div class="controls">
+                <i id="repeat-plist" class="material-icons" title="playlist looped">repeat</i>
+                <i id="prev" class="material-icons prev">fast_rewind</i>
+
+                <div class="play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons next">fast_forward</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="list material-icons">queue_music</i>
+                        <span>Music List</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Subscribe to receive updates and news about New Jeans!</p>
+        <form action="subscribe.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section>
+        <p>If you have any inquiries, please <a href="mailto:NJTOKKIinquiries@gmail.com">email us</a>.</p>
+    </section>
+    <footer>
+        <h5>&copy; NJTOKKI | All Rights Reserved</h5>
+    </footer>
+
+    <!--JS File-->
+    <script src="music.list.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

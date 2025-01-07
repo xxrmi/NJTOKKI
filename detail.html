@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scaled=1.0">
+    <title>NJTOKKI Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="Forum.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-item"><a href="Index.html">Home</a></li>
+                    <li class="nav-item"><a href="Forum.html">Forum</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">NJTOKKI Forum</div>
+        </div>
+        <!--Search Box-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type ="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="#">NJTOKKI Forum - Forums</a> >> <a href="#">Random Post</a></span>
+        </div>
+        
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original Thread-->
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: post's title (Read 1258 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="#">Username</a></div>
+                    <div>Role</div>
+                    <img src="https://preview.redd.it/ay60q1h5syh91.jpg?vthumb=1&s=d848c326abd81742a74b65beb1e5a44e985a25c4" alt="new jean mascot">
+                    <div>Posts: <u>45</u></div>
+                    <div>Points: <u>5423</u></div>
+                </div>
+
+                <div class="content">
+                    Just a random content of a random NJ post.
+                    <br>To see how it looks like. 
+                    <br><br>
+                    Nothing else :3
+                    <br>
+                    <hr>
+                    Regards Username
+                    <br>
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <!--Comment input-->
+    <div class="comment-area hide" id="comment-area">
+        <textarea name="comment" id="" placeholder="comment here ...."></textarea>
+        <input type="submit" value="submit">
+    </div>
+
+    <!--Show Comments-->
+    <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">AnotherUser</a></div>
+                    <div>Role</div>
+                    <img src="https://preview.redd.it/ay60q1h5syh91.jpg?vthumb=1&s=d848c326abd81742a74b65beb1e5a44e985a25c4" alt="new jean mascot">
+                    <div>Posts: <u>455</u></div>
+                    <div>Points: <u>4586</u></div>
+                </div>
+                <div class="content">
+                    Just a comment of the above random topic.
+                    <br>To see how it looks like.
+                    <br><br>
+                    Nothing more and nothing less.
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+</div>
+</div>
+
+    <!--Reply input-->
+    <div class="comment-area hide" id="reply-area">
+        <textarea name="reply" id="" placeholder="reply here ...."></textarea>
+        <input type="submit" value="submit">
+    </div>
+    <!--Another Comment with replies-->
+    <div class="comments-container">
+        <div class="body">
+            <div class="authors">
+                <div class="username"><a href="#">AnotherUser</a></div>
+                <div>Role</div>
+                <img src="https://preview.redd.it/ay60q1h5syh91.jpg?vthumb=1&s=d848c326abd81742a74b65beb1e5a44e985a25c4" alt="new jean mascot">
+                <div>Posts: <u>455</u></div>
+                <div>Points: <u>4586</u></div>
+            </div>
+            <div class="content">
+                Just a comment of the above NJ topic.
+                <br>To see how it looks like.
+                <br><br>
+                Nothing else :3
+                <br>
+                <br>
+                <div class="comment">
+                    <button onclick="showReply()">Reply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Reply Area-->
+    <div class="comment-area hide" id="reply-area">
+        <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+        <input type="submit" value="submit">
+    </div>
+
+    <footer>
+        <span>&copy; NJTOKKI | All Rights Reserved</span>
+    </footer>
+
+    
+    <script src="Forum.js"></script>
+</body>  
+</html>
